@@ -27,11 +27,19 @@ Before you begin, make sure you have the following prerequisites installed:
    cd passenger
    composer install
    ```
+4. Run command:
+   ```bash
+   php bin/console app:import:postcodes
+
 3. Run tests:
    ```bash
-   bin/console phpunit
+   ./vendor/bin/phpunit tests --colors
    ```
-If I had invested more time I would have added cs-fixer to improve the code structure, phpstan to improve the code quality and circleCI to implement continuous integration
+If I had invested more time I would have added: 
+- cs-fixer to improve the code structure
+- phpstan to improve the code quality
+- CircleCI to implement continuous integration
+- Upload repo in Heroku
 
 ### Author
 Adria
